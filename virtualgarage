@@ -1,8 +1,9 @@
 class Vehicle:
+
   def __init__(self):
     #dictionary of options
-    self.vehicle_options = {'make': '','model': ''}
-  
+    self.vehicle_options = {'make': '', 'model': ''}
+
   def setMake(self, make):
     self.vehicle_options['make'] = make
 
@@ -15,14 +16,14 @@ class Vehicle:
   def getModel(self):
     return self.vehicle_options['model']
 
-  
 
 class Car(Vehicle):
 
   def setCarDoors(self, doors):
-    self.str_door = door
+    self.str_doors = doors
+
   def getCarDoors(self):
-    return self.str_door
+    return self.str_doors
 
 
 class Truck(Vehicle):
